@@ -53,7 +53,7 @@ class CategoryViewController: UITableViewController {
         
         do{
             categories = try context.fetch(request)
-        } catch {
+        } catch{
             print("Error Loading categories \(error)")
         }
         tableView.reloadData()
